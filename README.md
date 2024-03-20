@@ -1,13 +1,5 @@
-<<<<<<< HEAD
-# COSC360 - Term Project
-
-### DromedaryDromedaryDromedary - CamelCamelCamel Clone
-
-### Team Members
-- Nicolaas Kouwenhoven (60504180)
-- Kenneth Abadi (11587235)
-- Brandon Mack (56817273)
-
+#COSC 360
+WIP
 ### Features
 #### Front-End
 - Clean User Interface: Intuitive design with consistent navigation accessible from all pages.
