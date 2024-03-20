@@ -1,4 +1,4 @@
-#COSC 360
+# COSC 360
 WIP
 ### Features
 #### Front-End
