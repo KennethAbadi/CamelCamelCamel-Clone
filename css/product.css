@@ -1,0 +1,214 @@
+body {
+    font-family: "Roboto", serif;
+}
+.productRow {
+    width: 960px;
+    margin: 0 300px;
+}
+.product {
+    text-align: center;
+    float: left;
+    width: 240px;
+    max-height: 50%;
+    margin: 6px;
+    background-color: var(--darkBlue);
+    color: white;
+    border-radius: 5px;
+    padding: 0 0 3% 0;
+}
+.imgBox {
+    transform: translateY(10px);
+    height: 200px;
+    max-width: 90%;
+    min-width: 150px;
+    margin: 5 5;
+    border-color: var(--coral);
+    border-style: solid;
+    border-radius: 5px;
+    
+}
+#main {
+    display: flex;
+    background-color: var(--blue);
+    min-height: 70vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.bodycontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-bottom: 40px;
+    table{
+            border-collapse: collapse;
+            width: 80%;
+            background-color: #F64C72;
+            border-radius: 5px;
+
+
+        tr{
+            font-family: "Roboto", serif;
+            color: white;
+        }
+        h2{
+            margin:3px;
+            margin-left: 0;
+            font-weight:normal;
+        }
+        td{
+            padding: 5px;
+            padding-left: 12px;
+        }
+        tr:nth-child(even) {background-color: #bb3a56;}
+        td{
+            align-items: center;
+        }
+    }
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 80%;
+    background-color: #F64C72;
+    border-radius: 10px;
+    margin-bottom   : 10px;
+    h2{
+        font-family: "Roboto", serif;
+        color: white;
+        margin:3px;
+        padding-left: 10px;
+        font-weight:normal;
+    }
+    .chart{
+        align-self: center;
+        min-height: 200px;
+        background-color: #011F4B;
+        margin: 10px;
+        margin-top: 5px;
+        border-radius: 10px;    
+        p{
+            font-family: "Roboto", serif;
+            color: white;
+            font-size: small;
+        }
+        .middlesec{
+            margin-top: 20px;
+            display: flex;
+            min-height: 100px;
+            align-items: center;
+            justify-content: center;
+
+            button{
+                background-color: #F64C72;
+                border: none;
+                width:50%;
+                height: 50px;
+                color: black;
+                font-size: medium;
+                
+            }
+        }
+    }
+    
+}
+.productTitle {
+    max-height: 50px;
+    overflow: hidden;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.productPrice {
+    color: white;
+    font-size: 18px;
+}
+.listPrice {
+    color: white;
+}
+.linkButton{
+    color: black;
+    margin: 0 10%;
+    padding: 5% 5%;
+    max-width: 70%;
+    border-radius: 5px;
+    background-color: var(--coral);
+    margin-top:5px;
+}
+.linkButton:hover {
+    background-color: #006dd4;
+}
+.review {
+    background-color: var(--darkBlue);
+    color: white;
+    margin: 1%;
+    border-radius: 5px;
+    width: 68%;
+    float: right;
+}
+#reviewBox {
+    margin: 0 4%;
+    background-color: white;
+    width: 90%;
+    height: 100px;
+    border-color: var(--coral);
+    border-radius: 10px;
+    padding: 1%;
+}
+.information {
+    margin: 1%;
+    width: 68%;
+    display: flex;
+    background-color: var(--darkBlue);
+    border-radius: 10px;
+    float: right;
+}
+.information p {
+    font-size: 14px;
+}
+#productInfo {
+    margin-top: 20px;
+    background: var(--coral);
+    border-radius: 10px;
+}
+#reviewForm {
+    justify-items: center;
+}
+#submit {
+    background-color: var(--coral);
+    border-radius: 5px;
+    border: none;
+    margin: 5px 5%;
+}
+.review label {
+    margin: 1% 5%;
+}
+#breadcrumbs {
+    color: white;
+    font-family: "Roboto", serif;
+    font-size: 15px;
+    width: 60%;
+}
+#bread {
+    display: flex;
+    min-height: 5vh;
+    background-color: var(--blue);
+    justify-content: center;
+    align-items: center;
+}
+
+#bread a:link, #bread a:hover, #bread a:visited {
+    color: var(--coral)
+}
+.newest {
+    width: 64%;
+    float: right;
+    background-color: var(--darkBlue);
+    color: white;
+    margin: 0 1% 1% 1%;
+    border-radius: 5px;
+    padding: 2%;
+}

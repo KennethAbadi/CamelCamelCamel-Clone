@@ -7,21 +7,14 @@ body {
     background-color: var(--darkBlue);
 }
 
-#mainContent {
-    display: flex;
-    align-items: center;
-}
 header {
     display: flex;
     align-items: center;
     background-color: var(--darkBlue);
     justify-content: center;
-    overflow: hidden;
+    overflow: auto;
     min-height: 10vh;
     border-bottom: 2px solid var(--lightGray);
-}
-iframe {
-    display: block;
 }
 
 #imageContainer {
@@ -47,13 +40,9 @@ a {
 }
 
 #search {
-    margin-bottom: 10px;
     display: flex;
     align-items: center;
     height: 53px;
-    justify-content: center;
-    background-color: var(--blue);
-    border-bottom-color: white;
 }
 
 #searchInput {
@@ -90,9 +79,7 @@ a {
 nav {
     display: flex;
 }
-.headerNav:hover {
-    text-decoration: underline;
-}
+
 .headerNav {
     display: flex;
     align-items: center;
@@ -106,10 +93,7 @@ nav {
     text-decoration: none;
     margin-left: 50px;
 }
-#loginButton:hover {
-    font-size: 24px;
-    background-color: var(--blue);
-}
+
 #loginButton {
     height: 60px;
     width: 150px;
@@ -122,18 +106,77 @@ nav {
     border: 4px solid var(--coral);
     cursor: pointer;
 }
-/* header end */
 
+    /* header end */
 /* body start */
 body {
     overflow: auto;
 }
+img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-self: center;
+}
+.bodycontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+.bodycontent h1 {
+    font-family: "Roboto", serif;
+    color: white;
+    padding: 0;
+}
+.bodycontent hr {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.bodycontent p {
+    margin-left: 0;
+}
+.menu {
+    display: flex;
+}
+.select {
+    display: flex;
+    flex-direction: column;
+    flex: 25%;
+}
+.select a {
+    font-size: larger;
+}
+hr {
+    border: none;
+    border-top: 1px solid white;
+    margin: 25px 0;
+    width: 100%;
+}
+#main a:visited {
+    color: var(--coral);
+}
+
+h3 {
+    font-family: "Roboto", serif;
+    color: white;
+    padding: 0;
+}
+p {
+    font-family: "Roboto", serif;
+    color: white;
+}
+
+.list-group a {
+    color: var(--coral);
+}
+
 #breadcrumbs {
     color: white;
     font-family: "Roboto", serif;
     font-size: 15px;
     width: 60%;
-    margin: 0;
 }
 #bread {
     display: flex;
@@ -142,63 +185,107 @@ body {
     justify-content: center;
     align-items: center;
 }
-#bread a:visited{
-    color: var(--coral);
+#bread a:link, #bread a:hover, #bread a:visited {
+    color: var(--coral)
 }
-
-#bread a:hover{
-    color: var(--coral);
-}
-
 #main {
     display: flex;
     background-color: var(--blue);
     min-height: 70vh;
-    flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+form {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-}
-.burger-menu-icon {
-    display: none;
-    font-size: 70px;
-    color: white;
-    cursor: pointer;
-    margin-top: 5px;
-}
-#backButton {
-    font-size: 70px;
-    color: white;
-    cursor: pointer;
-}
-.burger-menu-nav {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--coral);
-    width: 100vw;
-    height: 98vh;
-    font-family: "Roboto", serif;
-}
-.burger-menu-nav a:hover, .burger-menu-nav a:link, .burger-menu-nav a:visited {
-    display: flex;
-    color: white;
-    justify-self: center;
-    align-self: center;
-    margin-top: 2px;
-}
-.left, .right {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-content: center;
-}
-.left a {
-    padding-left: 100px;
+    margin-top: 30px;
 }
 
+form img {
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+}
+
+form h2 {
+    color: white;
+    font-family: "Roboto", serif;
+    margin-bottom: 40px;
+}
+#bodyContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+label {
+    align-self: flex-start;
+    color: white;
+    font-family: "Roboto", serif;
+}
+#changePassword input {
+    height: 30px;
+    width: 350px;
+    border-radius: 5px;
+    border-color: transparent;
+    font-family: "Roboto", serif;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+#passButton {
+    display: flex;
+    min-width: 200px;
+    min-height: 50px;
+    background-color: var(--coral);
+    color: white;
+    border-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#profilePicture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: "Roboto", serif;
+}
+#profilePic{
+    margin-top: 15px;
+}
+#logout {
+    font-family: "Roboto", serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+#logoutButt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    min-height: 50px;
+    background-color: var(--coral);
+    color: white;
+    border-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+#logout h2 {
+    text-align: center;
+    width: 100%;
+}
 /* body end */
 
 /* footer start */
@@ -251,47 +338,15 @@ p {
     font-weight: 400;
     text-decoration: none;
 }
-
 /* footer end */
 
 /* Media Query */
 @media only screen and (max-width: 980px) {
     header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
         scrollbar-width: none;
-    }
-    .burger-menu-icon {
-        display: flex;
-        align-self: flex-start;
-        position: absolute;
-        left: 5px;
-    }
-    #backButton {
-        display: flex;
-        align-self: flex-start;
-        position: absolute;
-        left: 5px;
-    }
-    #mainContent {
-        display: none;
-    }
-    #imageContainer {
-        display: flex;
-        align-self: center;
     }
     footer {
         scrollbar-width: none;
     }
-    .burger-menu-nav {
-        font-family: "Roboto", serif;
-        color: white;
-        justify-content: center;
-
-    }
-
 }
-
-
-

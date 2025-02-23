@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../assets/fonts/fonts.css">
+    <link rel="stylesheet" href="../assets/colors/colors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="../js/userSignup.js"></script>
+    <script src="../js/showPassword.js"></script>
+    <script src="../js/breadcrumb.js" ></script>
+    <script> document.addEventListener('DOMContentLoaded', updateBreadcrumb)</script>
+    <title>Create an Account</title>
+</head>
+<body>
+    <iframe src='header.php' width=100% frameborder=0 height=91vh></iframe>
+    <div id="main">
+        <div id="formContainer">
+            <div id="createForm">
+                <form enctype='multipart/form-data' id="createUserForm" action="../register.php" method="post" onsubmit="checkFile()">
+                    <h2>Get Started With a Free Account</h2>
+                    <hr>
+                    <label>
+                        Email Address
+                        <br>
+                        <input type="email" id="email" name="email" class="formInput">
+                    </label>
+                    <br>
+                    <label for="password">Password</label>
+                    <br>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" name="password" class="formInput">
+                        <button id="togglePassword1" class="toggle-password" aria-label="Toggle password visibility">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <br>
+                    <label for="confirmPassword"> Confirm Password </label>
+                    <br>
+                    <div class="password-wrapper">
+                        <input type="password" id="confirmPassword" name="confirmPassword" class="formInput">
+                        <button id="togglePassword2" class="toggle-password" aria-label="Toggle password visibility">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <br>
+                    <input id="createButton" type="submit" class="submitButton" value="Create Account">
+                </form>
+            </div>
+            
+            <div id="loginForm">
+                <form action="../login.php" method="post">
+                    <h2>Login to Existing Account</h2>
+                    <hr>
+                    <label>
+                        Email Address
+                        <br>
+                        <input type="email" id="logemail" name ="logemail" class="formInput">
+                    </label>
+                    <br>
+                    <label for="loginpassword"> Password </label>
+                    <br>
+                    <div class="password-wrapper">
+                        <input type="password" id="loginpassword" name="loginpassword" class="formInput">
+                        <button id="togglePassword3" class="toggle-password" aria-label="Toggle password visibility">
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <br>
+                    <input type="submit" class="submitButton" value="Login">
+                </form>
+            </div>
+        </div>
+    </div>
+    <iframe src="footer.html" width=100% frameborder=0 height=160vh></iframe>
+</body>
+</html>

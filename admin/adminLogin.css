@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContent {
+    margin-bottom: 10px;
+    font-family: "Roboto", serif;
+}
+
+h1, p{
+    font-family: "Roboto", serif;
+    overflow: auto;
+}
+
+button {
+    margin-top: 10px;
+}
+
+a button {
+    margin-top: 50%;
+}
+
+/* Media Query */
+@media only screen and (max-width: 980px) {
+    h1 {
+        text-align: center;
+    }
+}

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # COSC360 - Term Project
 
 ### DromedaryDromedaryDromedary - CamelCamelCamel Clone
@@ -40,7 +39,3 @@
 - 'includes/' - Reusable PHP components such as website headers and footers.
 - 'pages/' - PHP files for each page of the website.
 - 'index.php' - Homepage of website.
-=======
-# CamelCamelCamel Clone
- In Progress in another Repo! Will upload when near completion.
->>>>>>> 6875e14dffe30561c255151ab514ea9a11cffff4

@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="../css/pageOutline.css">
     <link rel="stylesheet" href="../assets/fonts/fonts.css">
     <link rel="stylesheet" href="../assets/colors/colors.css">
+    <link rel="stylesheet" href="../css/support.css">
     <script src="../js/breadcrumb.js" ></script>
     <script> document.addEventListener('DOMContentLoaded', updateBreadcrumb)</script>
-    <title>Home</title>
+    <title>Contact Us</title>
 </head>
 <body>
     <iframe src='header.php' width=100% frameborder=0 height=91vh></iframe>
@@ -16,8 +17,24 @@
         <nav id="breadcrumbs" aria-label="Breadcrumb">test</nav>
     </div>
     <div id="main">
-
-
+      <div id="formContainer">
+        <h1> Contact Us </h1>
+        <form>
+          <label for="firstName"> First Name </label>
+          <br>
+          <input id="firstName" type="text" class="formInput">
+          <br>
+          <label for="lastName"> Last Name </label>
+          <br>
+          <input id="lastName" type="text" class="formInput">
+          <br>
+          <label for="subject"> Subject </label>
+          <br>
+          <textarea id="subject" class="formInput" style="height: 150px;"></textarea>
+          <br>
+          <button type="submit" id="submit"> Submit </button>
+        </form>
+      </div>
     </div>
     <iframe src="footer.html" width=100% frameborder=0 height=160vh></iframe>
 </body>

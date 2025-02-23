@@ -4,24 +4,17 @@ body {
     padding: 0;
     border: 0;
     outline: 0;
-    background-color: var(--darkBlue);
+    color(--var);
 }
 
-#mainContent {
-    display: flex;
-    align-items: center;
-}
 header {
     display: flex;
     align-items: center;
     background-color: var(--darkBlue);
     justify-content: center;
-    overflow: hidden;
-    min-height: 10vh;
+    overflow: auto;
+    height: 10vh;
     border-bottom: 2px solid var(--lightGray);
-}
-iframe {
-    display: block;
 }
 
 #imageContainer {
@@ -47,13 +40,9 @@ a {
 }
 
 #search {
-    margin-bottom: 10px;
     display: flex;
     align-items: center;
     height: 53px;
-    justify-content: center;
-    background-color: var(--blue);
-    border-bottom-color: white;
 }
 
 #searchInput {
@@ -90,9 +79,7 @@ a {
 nav {
     display: flex;
 }
-.headerNav:hover {
-    text-decoration: underline;
-}
+
 .headerNav {
     display: flex;
     align-items: center;
@@ -106,10 +93,7 @@ nav {
     text-decoration: none;
     margin-left: 50px;
 }
-#loginButton:hover {
-    font-size: 24px;
-    background-color: var(--blue);
-}
+
 #loginButton {
     height: 60px;
     width: 150px;
@@ -122,18 +106,69 @@ nav {
     border: 4px solid var(--coral);
     cursor: pointer;
 }
+
 /* header end */
 
 /* body start */
 body {
     overflow: auto;
 }
+#bodyContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+#bodyLogoContainer {
+    display: inline-flex;
+    justify-self: center;
+    align-self: center;
+}
+#bodyPageName {
+    font-family: "Roboto", serif;
+    color: white;
+}
+.bodyText {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+hr {
+        border: none;
+        border-top: 1px solid white;
+        margin: 25px 0;
+        width: 100%;
+    }
+
+h3 {
+    font-family: "Roboto", serif;
+    color: white;
+    padding: 0;
+}
+p {
+    font-family: "Roboto", serif;
+    color: white;
+}
+.bodyText p {
+    margin: 0;
+    padding: 0;
+}
+#main a:visited{
+    color: var(--coral);
+}
+
+#main a:hover{
+    color: var(--coral);
+}
+
 #breadcrumbs {
     color: white;
     font-family: "Roboto", serif;
     font-size: 15px;
     width: 60%;
-    margin: 0;
 }
 #bread {
     display: flex;
@@ -142,61 +177,17 @@ body {
     justify-content: center;
     align-items: center;
 }
-#bread a:visited{
-    color: var(--coral);
-}
-
-#bread a:hover{
-    color: var(--coral);
+#bread a:link, #bread a:hover, #bread a:visited {
+    color: var(--coral)
 }
 
 #main {
     display: flex;
     background-color: var(--blue);
     min-height: 70vh;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-}
-.burger-menu-icon {
-    display: none;
-    font-size: 70px;
-    color: white;
-    cursor: pointer;
-    margin-top: 5px;
-}
-#backButton {
-    font-size: 70px;
-    color: white;
-    cursor: pointer;
-}
-.burger-menu-nav {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--coral);
-    width: 100vw;
-    height: 98vh;
-    font-family: "Roboto", serif;
-}
-.burger-menu-nav a:hover, .burger-menu-nav a:link, .burger-menu-nav a:visited {
-    display: flex;
-    color: white;
-    justify-self: center;
-    align-self: center;
-    margin-top: 2px;
-}
-.left, .right {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-content: center;
-}
-.left a {
-    padding-left: 100px;
 }
 
 /* body end */
@@ -229,14 +220,14 @@ footer {
 h4 {
     color: var(--white);
     font-size: 14px;
-    margin: 10px;
+    margin: 20px;
 }
 
 p {
     color: var(--white);
     font-size: 12px;
     font-weight: 400;
-    margin: 10px;
+    margin: 20px;
 }
 
 .row {
@@ -251,47 +242,37 @@ p {
     font-weight: 400;
     text-decoration: none;
 }
-
 /* footer end */
 
 /* Media Query */
 @media only screen and (max-width: 980px) {
     header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
         scrollbar-width: none;
-    }
-    .burger-menu-icon {
-        display: flex;
-        align-self: flex-start;
-        position: absolute;
-        left: 5px;
-    }
-    #backButton {
-        display: flex;
-        align-self: flex-start;
-        position: absolute;
-        left: 5px;
-    }
-    #mainContent {
-        display: none;
-    }
-    #imageContainer {
-        display: flex;
-        align-self: center;
     }
     footer {
         scrollbar-width: none;
     }
-    .burger-menu-nav {
-        font-family: "Roboto", serif;
-        color: white;
-        justify-content: center;
-
-    }
-
+    #bodyContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }
 
-
-
+    #bodyLogoContainer {
+        display: inline-flex;
+        justify-self: center;
+        align-self: center;
+        height: 100px;
+    }
+    #bodyLogo {
+        padding-left: 45px;
+    }
+    #bodyPageName {
+        font-family: "Roboto", serif;
+        color: white;
+        font-size: 20px;
+    }
+}
