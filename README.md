@@ -1,5 +1,12 @@
-# COSC 360
-WIP
+# COSC360 - Term Project
+
+### DromedaryDromedaryDromedary - CamelCamelCamel Clone
+
+### Team Members
+- Nicolaas Kouwenhoven (60504180)
+- Kenneth Abadi (11587235)
+- Brandon Mack (56817273)
+
 ### Features
 #### Front-End
 - Clean User Interface: Intuitive design with consistent navigation accessible from all pages.
@@ -32,7 +39,3 @@ WIP
 - 'includes/' - Reusable PHP components such as website headers and footers.
 - 'pages/' - PHP files for each page of the website.
 - 'index.php' - Homepage of website.
-=======
-# CamelCamelCamel Clone
- In Progress in another Repo! Will upload when near completion.
->>>>>>> 6875e14dffe30561c255151ab514ea9a11cffff4
